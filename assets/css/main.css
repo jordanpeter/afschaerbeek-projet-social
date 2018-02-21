@@ -2325,7 +2325,7 @@
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
-		
+
 		}
 
 			.image.fit img {
@@ -2791,6 +2791,18 @@
 				border-color: #ffffff;
 			}
 
+			.iconclick:hover{
+				background-color: black;
+				opacity: 0.7;
+
+				cursor: pointer;
+			}
+
+			.black{
+				background-color: black;
+				opacity: 0.7;
+			}
+
 			.main.style2 .icon.major {
 				color: #ffffff;
 			}
@@ -2798,7 +2810,7 @@
 /* Header */
 
 	#header {
-		padding: 9em 0 9em 0 ;
+		padding: 2em 0 5em 0 ;
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
@@ -2985,7 +2997,7 @@
 /* Footer */
 
 	#footer {
-		padding: 6em 0 6em 0 ;
+		padding: 4em 0 2em 0 ;
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
@@ -3420,3 +3432,719 @@
 			}
 
 	}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative !important;
+}
+
+#socialbutton {
+  position: fixed;
+  top: 200px;
+  z-index: 999;
+}
+
+#socialbutton ul {
+  margin: 0;
+  padding: 0;
+  width: 125px;
+}
+
+#socialbutton li {
+  margin: 0 0 5px 0;
+  padding: 5px;
+  position: relative;
+  left: -90px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: right;
+}
+
+#socialbutton li:hover {
+  left: 0;
+}
+
+#socialbutton li:nth-child(1) {
+  background-color: lightblue;
+}
+
+#socialbutton li:nth-child(1) a i {
+  color: lightblue;
+}
+
+#socialbutton li:nth-child(2) {
+  background-color: blue;
+}
+
+#socialbutton li:nth-child(2) a i {
+  color: blue;
+}
+
+#socialbutton li:nth-child(3) {
+  background-color: pink;
+}
+
+#socialbutton li:nth-child(3) a i {
+  color: pink;
+}
+
+#socialbutton li:nth-child(4) {
+  background-color: red;
+}
+
+#socialbutton li:nth-child(4) a i {
+  color: red;
+}
+
+#socialbutton li a {
+  color: white;
+}
+
+#socialbutton li a:hover {
+  text-decoration: none;
+}
+
+#socialbutton li a i {
+  width: 26px;
+  height: 26px;
+  padding: 5px;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.navbar-default {
+  position: absolute;
+  background: transparent !important;
+  border-color: transparent!important;
+  padding: 1em 2em;
+}
+
+/*hamburger*/
+
+.icon-bar {
+  background-color: red !important;
+}
+
+.navbar-default a {
+  color: white !important;
+  text-transform: uppercase;
+}
+
+.navbar-default li a:hover {
+  color: white !important;
+  background-color: red !important;
+}
+
+.navbar-default li a:focus {
+  color: red !important;
+}
+
+.navbar-default li a:active {
+  color: white !important;
+}
+
+.navbar-default .navbar-nav .active a {
+  color: red !important;
+  background-color: transparent !important;
+}
+
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle button, .navbar-default .navbar-toggle button:hover {
+  border-color: transparent !important;
+  background-color: transparent !important;
+  float: right !important;
+}
+
+.navbar-brand {
+  font-size: 2em !important;
+  font-weight: bolder!important;
+}
+
+.navbar-nav {
+  font-size: .8em !important;
+}
+
+.menu {
+  background-color: rgba(255, 255, 255, 0.25);
+  margin: 5px;
+}
+
+.home {
+  margin: 5px;
+}
+
+.dropdown-menu a {
+  color: black !important;
+  font-size: .8em !important;
+}
+
+.input-group button {
+  background-color: none !important;
+  border-color: transparent !important;
+}
+
+.input-group button:hover {
+  background-color: none !important;
+  border-color: transparent !important;
+}
+
+.navbar-form input {
+  width: 200px;
+  background-color: black !important;
+  opacity: 0.5;
+  border-radius: 15px;
+  border-color: transparent !important;
+}
+
+.container-row {
+  width: 75% !important;
+  margin: 40px auto;
+  color: black !important;
+}
+
+#featuredMovies h1, #featuredSeries h1, #shopMovies h1, #contactUs h1 {
+  color: black !important;
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  text-transform: uppercase;
+  font-weight: bold!important;
+  letter-spacing: 0.05em;
+  border-left: red solid thick;
+  padding: 15px;
+}
+
+#shopMovies h1 {
+  margin-left: 80px;
+}
+
+/*text positioning in fading images*/
+
+.container-row-first {
+  margin: 50px;
+  border: 1px lightgrey solid !important;
+  width: 90vw;
+  height: 50vh;
+}
+
+@media only screen and (max-width:800px) {
+  .container-row-first {
+    margin: 20px;
+    width: 65vw;
+    height: 200vh;
+  }
+}
+
+.fiveImages p {
+  width: 130px;
+  margin: 0;
+}
+
+.rightText {
+  position: relative;
+  left: 40px;
+}
+
+.yearGenre {
+  font-size: 12px;
+}
+
+.jumbotron {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: rgba(121, 43, 57, 0.5) !important;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 !important;
+}
+
+/*red text*/
+
+.red {
+  color: red !important;
+}
+
+.red p {
+  font-size: 1.2em;
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.navbar {
+  position: absolute !important;
+  z-index: 999;
+}
+
+#myCarousel {
+  margin-top: 0;
+  z-index: 1;
+}
+
+.carousel-indicators .active {
+  width: 20px !important;
+  height: 5px !important;
+  background-color: red !important;
+  border-radius: 0 !important;
+  border-color: red !important;
+}
+
+.carousel-indicators .active:hover {
+  width: 20px !important;
+  height: 5px !important;
+  background-color: red !important;
+  border-radius: 0 !important;
+  border-color: red !important;
+}
+
+.carousel-indicators li {
+  width: 20px !important;
+  height: 5px !important;
+  border-radius: 0 !important;
+  background-color: lightgrey !important;
+  margin: 0 !important;
+  border-color: lightgrey !important;
+}
+
+.carousel-indicators li:hover {
+  width: 20px !important;
+  height: 5px !important;
+  border-radius: 0 !important;
+  background-color: lightgrey !important;
+  margin: 0 !important;
+  border-color: lightgrey !important;
+}
+
+.container-red {
+  background-color: red !important;
+  width: 100%;
+}
+
+.container-red p {
+  color: white !important;
+  padding: 5px 20px;
+}
+
+.container-fluid {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#myCarousel h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.container-red p, #myCarousel p {
+  text-transform: uppercase;
+  font-size: 10px !important;
+  font-weight: lighter !important;
+  font-stretch: condensed;
+}
+
+.btn.btn-primary.black {
+  margin: 10px 2px;
+  background-color: black !important;
+  border-radius: 0 !important;
+  border-color: black !important;
+  text-transform: uppercase;
+}
+
+.btn.btn-primary {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: red !important;
+  border-radius: 0 !important;
+  border-color: red !important;
+}
+
+.filter-button button {
+  margin: 2px 0px;
+  background-color: lightgrey !important;
+  border-radius: 0 !important;
+  border-color: transparent!important;
+  padding: 10px;
+}
+
+.filter-button button:hover, .filter-button button:focus {
+  background: red !important;
+  padding: 10px;
+  border-color: transparent !important;
+  text-shadow: none !important;
+}
+
+.btn-hide {
+  text-align: center;
+}
+
+.btn-hide button {
+  text-transform: uppercase;
+  color: white !important;
+  font-weight: bold;
+  background-color: red !important;
+  border-radius: 0 !important;
+  border-color: transparent!important;
+  padding: 10px;
+}
+
+.slideshow {
+  margin: 50px auto;
+  position: relative;
+  width: 130px;
+  height: 180px;
+  padding: 20px;
+}
+
+.slideshow>div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.item img {
+  width: 100%;
+  height: 25%;
+  padding: 0;
+  margin: 0;
+  filter: brightness(45%);
+}
+
+img {
+  width: 130px;
+  height: 180px;
+  margin: 10px 5px;
+}
+
+#Hiernauxfit, #oldLady{
+	width: 100%;
+	height: auto;
+}
+
+.all.col-md-2.col-6 {
+  width: 150px;
+  padding: 0;
+  margin: 2px;
+}
+
+.allSerie.col-md-2.col-6 {
+  width: 150px;
+  padding: 0;
+  margin: 2px;
+}
+
+.bcgrd.col-md-3.col-6 {
+  width: 150px;
+  padding: 0;
+  margin: 2px;
+  background-color: lightgrey !important;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75) !important;
+}
+
+.bcgrd.col-md-3.col-6 img {
+  width: 100%;
+  margin: 0;
+}
+
+hr {
+  border: .5px solid #777474 !important;
+  width: 100%;
+  margin: 10px 0 25px 0 !important;
+  !important;
+  padding: 0;
+}
+
+footer {
+  background-color: #2d2d2d;
+  padding: 20px;
+  text-align: center;
+}
+
+footer h5 {
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  color: white !important;
+  font-weight: bold;
+}
+
+.release, .movies, .review, .latest, .images {
+  margin: 10px auto;
+}
+
+.images h5 {
+  margin-top: -8px;
+  font-size: 1.5em;
+}
+
+footer .review p {
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  color: white !important;
+  font-weight: bold;
+}
+
+footer .subscribe input {
+  border-radius: 0 !important;
+  margin: 5px auto;
+}
+
+footer .subscribe button {
+  margin: 5px auto;
+}
+
+footer .connect-social li {
+  padding: 5px;
+  margin: 5px;
+  display: inline;
+  border: white thin solid;
+}
+
+footer li a i {
+  color: white;
+  width: 15px;
+  height: 15px;
+}
+
+hr {
+  width: 100%;
+}
+
+.connect-social ul {
+  margin-left: -40px !important;
+}
+
+.connect-social p {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: grey;
+}
+
+.subscribe input {
+  text-align: right;
+  width: 350px;
+}
+
+.subscribe button {
+  text-align: right;
+}
+
+.subscribe2 {
+  margin: 20px auto;
+}
+
+.subscribe2 ul {
+  margin: 0;
+  padding: 0;
+}
+
+.subscribe2 li {
+  text-align: left !important;
+  list-style: none;
+  color: grey !important;
+}
+
+.review p {
+  line-height: 30px;
+}
+
+.review span {
+  text-transform: none;
+  font-weight: normal;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  margin-top: 10px !important;
+}
+
+.images img {
+  margin: 0;
+  padding: 0;
+  width: 65px;
+  height: 80px;
+}
+
+.latest iframe {
+  text-align: left;
+  width: 70px;
+  height: 40px;
+}
+
+.latest p {
+  text-align: left;
+  margin: 2px auto;
+  text-transform: none;
+  color: grey;
+  font-weight: normal;
+}
+
+#shopMovies .right {
+  padding: 0;
+  margin-top: 2px;
+  background-color: black !important;
+  height: 100%;
+  color: white !important;
+}
+
+#shopMovies .right button {
+  margin-top: -25px;
+  border-radius: 0 !important;
+  border-color: transparent!important;
+  background-color: black !important;
+  color: white !important;
+}
+
+#shopMovies .right h4 {
+  text-transform: uppercase;
+  color: red !important;
+  font-weight: bold;
+}
+
+#shopMovies .right h5 {
+  color: red !important;
+  font-weight: bold;
+}
+
+#shopMovies .right iframe {
+  width: 100%;
+  height: auto;
+}
+
+footer .usefulLinks {
+  font-style: 'Open Sans', sans-serif !important;
+  color: white;
+}
+
+footer .usefulLinks a {
+  text-decoration: none;
+  color: red;
+}
+
+/*pop-ups windows ____________________________________________*/
+
+.modal-header {
+  text-align: center;
+  text-transform: uppercase !important;
+  font-style: 'Open Sans Condensed', sans-serif !important;
+}
+
+.modal-header h4 {
+  color: red !important;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.modal-header p {
+  color: black !important;
+  text-align: left;
+}
+
+.modal-header input {
+  padding: 5px;
+  margin: 10px;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-body input {
+  padding: 5px;
+  margin: 10px;
+}
+
+.modal-body p {
+  color: black !important;
+  margin: 0 !important;
+}
+
+.modal-footer button {
+  font-weight: bold;
+  color: white !important;
+  text-transform: uppercase;
+  background-color: red !important;
+  border-radius: 0 !important;
+  border-color: transparent!important;
+  padding: 10px;
+}
+
+.modal.fade {
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-style: 'Open Sans Condensed', sans-serif !important;
+}
+
+.modal-content iframe {
+  border: 1px black solid;
+  margin: 20px;
+  display: relative;
+  width: 500px;
+  height: auto;
+}
+
+@media only screen and (max-width:768px) {
+  .modal-content iframe {
+    width: 150px;
+    height: auto;
+  }
+  .modal.fade {
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+#buttonScroll {
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 999;
+  padding: 15px;
+  border-color: white;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
